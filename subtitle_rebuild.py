@@ -48,9 +48,9 @@ def subtitle_rebuild(subtitle_file):
     """
     # --- 在此处配置您的模型参数 ---
     # 您的API密钥，如果不需要可以留空或设为 "dummy-key"
-    API_KEY = "sk-CC31kkIMY3uMNhLxyYubMzSGOoFqhq9BH30vkyiTyYHIbkW2" 
+    API_KEY = "$API_KEY" 
     # 您的模型调用网址 (例如: "http://localhost:8000/v1")
-    BASE_URL = "http://43.162.122.167:42013/v1" 
+    BASE_URL = "$BASE_URL/v1" 
     # 您要使用的模型名称
     MODEL_NAME = "gpt-4o-mini"
     # --------------------------------

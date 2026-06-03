@@ -41,12 +41,10 @@ class SelfAgent(BaseAgent):
     def __init__(self, model_name='Qwen/Qwen2.5-VL-7B-Instruct'):
         super().__init__(model_name)
         self.client = OpenAI(
-            # base_url="http://automl.aiserverai.online/v1",
-            # api_key="sk-GP9H3FNTMcu8asZ3xU0gmJyDnKmKgCmLVByMLdhHHde0Gw2f"
-            base_url = "https://integrate.api.nvidia.com/v1",
-            api_key = "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",
-            # base_url="http://127.0.0.1:11434/v1",
-            # api_key="sk-CC31kkIMY3uMNhLxyYubMzSGOoFqhq9BH30vkyiTyYHIbkW2"
+
+            base_url = "${BASE_URL}/v1",
+            api_key = "$API_KEY",
+
             http_client=custom_http_client
         )
         # gemini-3-flash-preview

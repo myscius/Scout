@@ -204,8 +204,8 @@ def load_questions_from_file(file_path: str) -> List[str]:
 def main():
     """主函数示例"""
     # API配置
-    API_KEY = "sk-CC31kkIMY3uMNhLxyYubMzSGOoFqhq9BH30vkyiTyYHIbkW2"
-    BASE_URL = "http://43.162.122.167:42013/v1"
+    API_KEY = "$API_KEY"
+    BASE_URL = "$BASE_URL/v1"
     # QUESTIONS_FILE = "/data1/yangyan/workdir/questions_lvbench_subset_50_en.json"
     QUESTIONS_FILE = "/data1/yangyan/workdir/questions_vmme_en.json"
     OUTPUT_FILE = "/data1/yangyan/workdir/class_vmme_results.json"
